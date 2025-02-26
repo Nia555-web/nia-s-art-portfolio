@@ -1,0 +1,136 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(241, 248, 248);
+    text-align: center;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    padding-top: 48px;
+    font-weight: lighter;
+}
+ .hero {
+    background-image: url(./original_0371583e-80a9-40b4-a5aa-77cb36a8a935_sketch1725195915779.jpg);
+    background-size:cover;
+    opacity: 0.7;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    text-align: left;
+    color: white;
+    padding: 20px;
+    font-size:x-large;
+ }
+
+ .hero h1, .hero p {
+   position: relative;
+   z-index: 2;
+}
+
+ .align {
+    text-align: left;
+    margin-left: 30px;
+    font-size: 20px;
+ }
+
+ .gallery {
+   display: grid;
+   padding: 30px;
+   gap: 10px;
+   align-items: center;
+   margin: 0 auto;
+   justify-content: center;
+   width:min-content;
+ }
+
+ .resume, .about {
+   color: rgb(74, 104, 133);
+   padding: 40px 40px;
+   background-color: #e4eced;
+ }
+
+ .contacts {
+   color: rgb(42, 80, 117);
+   text-align: right;
+   padding: 30px 30px;
+   background-color: rgb(211, 219, 224);
+ }
+
+ .image {
+   border-radius: 1%;
+ }
+
+ @media (max-width: 630px) {
+   .gallery {
+      grid-template-columns: 1fr;
+   }
+   .contacts {
+      text-align: center;
+   }
+   .navbar ul {
+      gap: 0px;
+   }
+}
+
+ @media (min-width: 631px) and (max-width: 940px){
+   .gallery {
+      grid-template-columns: 1fr 1fr;
+      width: 630px;
+   }
+   .navbar ul {
+      gap: 15px;
+   }
+ }
+
+ @media (min-width: 941px) {
+   .gallery {
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 940px;
+   }
+   .navbar ul {
+      gap: 25px;
+   }
+ }
+
+
+
+
+ /* Navbar styles */
+.navbar {
+   background-color: #8ad4ef;
+   padding: 15px 0;
+   text-align: right;
+   position: fixed; /* Sticks it to the top */
+   width: 100%;
+   top: 0;
+   left: 0;
+   z-index: 1000;
+}
+
+.navbar ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: right;
+}
+
+.navbar ul li {
+   display: inline;
+}
+
+.navbar ul li a {
+   text-decoration: none;
+   color: white;
+   font-size: 15px;
+   font-weight: lighter;
+   padding: 10px 5px;
+   transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+   background-color: #63a0bd;
+   border-radius: 5px;
+}
+
